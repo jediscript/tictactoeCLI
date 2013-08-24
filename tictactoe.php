@@ -160,7 +160,8 @@ class TicTacToe{
 		}
 		
 		//try to take one of the corners, if it is free
-		$move = $this->chooseRandomMoveFromList($board, [1,3,7,9]);
+		$corners = array(1,3,7,9);
+		$move = $this->chooseRandomMoveFromList($board, $corners);
 		if($move != null){
 			return $move;
 		}
@@ -171,7 +172,8 @@ class TicTacToe{
 		}
 		
 		//move on one of the sides
-		return $this->chooseRandomMoveFromList($board, [2,4,6,8]);
+		$sides = array(2,4,6,8);
+		return $this->chooseRandomMoveFromList($board, $sides);
 	}
 	
 	public function isBoardFull($board){
