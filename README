@@ -1,3 +1,19 @@
 tictactoeCLI
 
 A simple Tic Tac Toe command line game application.
+
+To run:
+1. type this on your terminal "php tictactoe.php".
+
+Gameplay:
+a. The board is numbered 1-9
+|| 7 | 8 | 9 ||
+---------------
+|| 4 | 5 | 6 ||
+---------------
+|| 1 | 2 | 3 ||
+b. Select your letter (X or O)
+c. The computer will select randomly who will go first.
+d. Press the number where you want to put X or O.
+e. Wait for computer's turn and make your move.
+f. Repeat d and e until a winner is declared.
